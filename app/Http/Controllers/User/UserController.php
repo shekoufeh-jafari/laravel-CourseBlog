@@ -26,7 +26,7 @@ class UserController extends Controller
     {
         $dataForm = $request->all();
         User::create($dataForm);
-        return redirect()->route(('register'));
+        return redirect()->route(('login'));
     }
 
     public function login()

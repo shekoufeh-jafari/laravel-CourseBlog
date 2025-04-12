@@ -25,7 +25,7 @@ class AdminController extends Controller
             $dataForm = $request->all();
             $dataForm['image'] =$myfile;
             course::create($dataForm);
-            return redirect()->route(('admin.add'));
+            return redirect()->route(('admin.panel'));
         }
     }
 

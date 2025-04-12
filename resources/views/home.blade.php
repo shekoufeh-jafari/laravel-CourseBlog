@@ -43,7 +43,16 @@
             font-size: 16px;
             font-family: sans-serif;
         }
-
+        .button1 {    display: block;
+    width: 200px; 
+    margin: 0 auto; 
+    text-align: center;
+    background-color: rgb(22, 105, 123);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+        }
         .card-list {
             display: block;
             margin: 1rem auto;
@@ -88,6 +97,11 @@
 </head>
 
 <body>
+   
+    <a class="button button1" href="{{ route('register') }}">ثبت نام</a>
+    <br>
+    <a class="button button1" href="{{ route('login') }}">ورود</a>
+    
     <ul class="card-list">
 
 
